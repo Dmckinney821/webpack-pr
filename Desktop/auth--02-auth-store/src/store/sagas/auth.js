@@ -27,7 +27,7 @@ export function* authUserSaga(action) {
         };
         let url = 'https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key=AIzaSyA6tq7PUPy9NO-psaELogwmghorvtFkGNk';
         if (!action.isSignup) {
-            url = 'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyA6tq7PUPy9NO-psaELogwmghorvtFkGNkY';
+            url = 'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyA6tq7PUPy9NO-psaELogwmghorvtFkGNk';
         }
         try {
         const response = yield axios.post(url, authData)
